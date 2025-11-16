@@ -3,7 +3,7 @@
         var translations = {
             pt: {
                 pageTitle: 'Currículo',
-                langBtn: 'EN',
+                langBtn: 'EN Ver.',
                 downloadBtn: 'Baixar PDF',
                 profileAge: '20 Anos',
                 profileRole: 'Estagiário Back-End C# | Conhecimento em Front-End e Suporte Técnico',
@@ -35,12 +35,12 @@
             },
             en: {
                 pageTitle: 'Resume',
-                langBtn: 'PT',
+                langBtn: 'PT Ver.',
                 downloadBtn: 'Download PDF',
                 profileAge: '20 Years Old',
                 profileRole: 'Back-End C# Intern | Front-End and Technical Support Knowledge',
                 aboutTitle: 'About',
-                aboutText: 'Systems Analysis and Development student with full-stack profile: back-end in C# (OOP, MySQL, Regex) and front-end with HTML5/CSS3/JavaScript. Differentials: advanced English (C1), Power BI for data analysis and commercial experience that developed communication and problem-solving skills. Projects available on GitHub. Seeking first internship opportunity to evolve technically in a collaborative environment.',
+                aboutText: 'Systems Analysis and Development student with a full-stack focus: back-end in C# and front-end in HTML5, CSS3, and JavaScript. Advanced English (C1), experience with Power BI, and commercial background that strengthened communication and problem-solving skills. Active GitHub portfolio. Seeking my first internship to grow technically and contribute within a collaborative team.',
                 skillsTitle: 'Skills',
                 skillRegex: 'Regex Structure',
                 skillDb: 'MySQL Database',
