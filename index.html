@@ -4,136 +4,166 @@
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Currículo</title>
+    <title>Currículo - Mauricio Miller Oliveira</title>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>MAURICIO MILLER OLIVEIRA</h1>
-            <div class="contact-info">
-                <span>📧 mauriciomilleroliveira@hotmail.com</span>
-                <span>📱 (51) 98903-2545</span>
-                <span>📍 Guaíba, RS</span>
-                <span>💼 <a href="https://www.linkedin.com/in/maumiller/" target="_blank">linkedin.com/in/maumiller/</a></span>
-                <span>💻 <a href="https://github.com/Varmundt" target="_blank">github.com/Varmundt</a></span>
+    <header>
+        <div class="header-content">
+            <h1 id="page-title">Currículo</h1>
+            <div class="header-buttons">
+                <button class="btn-lang" onclick="toggleLanguage()">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="2" y1="12" x2="22" y2="12"></line>
+                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                    </svg>
+                    <span id="lang-btn-text">EN</span>
+                </button>
+                <button class="btn-download" onclick="downloadPDF()">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    <span id="download-btn-text">Baixar PDF</span>
+                </button>
             </div>
         </div>
+    </header>
 
-        <div class="section">
-            <div class="section-title">Sobre</div>
-            <p class="about-text">
-                Estudante de Análise e Desenvolvimento de Sistemas com perfil full-stack: back-end em Python (POO, MySQL, Regex) e front-end com HTML5/CSS3/JavaScript. Diferenciais: inglês avançado (C1), experiência com Power BI para análise de dados e vivência comercial que desenvolveu habilidades de comunicação e resolução de problemas. Projetos disponíveis no GitHub. Busco primeira oportunidade de estágio para evoluir tecnicamente em um ambiente colaborativo.
-            </p>
-        </div>
-
-        <div class="section">
-            <div class="section-title">Educação</div>
-            
-            <div class="education-item">
-                <div class="item-title">Tecnólogo em Análise e Desenvolvimento de Sistemas</div>
-                <div class="item-subtitle">UNINTER - Centro Universitário Internacional</div>
-                <div class="item-date">Maio 2025 - Junho 2027 (em curso)</div>
-                <div class="item-description">
-                    Conteúdos: HTML5, CSS3, JavaScript, Python, Linux, Programação Orientada a Objetos, Banco de Dados SQL, CRUD, Design Responsivo, Análise de Requisitos e Versionamento...
-                </div>
-            </div>
-        </div>
-
-        <div class="section">
-            <div class="section-title">Skills Técnicas</div>
-            <div class="skills-container">
-                <div>
-                    <div class="skill-category">
-                        <div class="skill-category-title">Back-end</div>
-                        <ul class="skill-list">
-                            <li>Python</li>
-                            <li>Flask</li>
-                            <li>Django</li>
-                            <li>Estrutura de Regex</li>
-                            <li>Banco de Dados MySQL</li>
-                            <li>Programação Orientada a Objetos (POO)</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="skill-category">
-                        <div class="skill-category-title">Front-end</div>
-                        <ul class="skill-list">
-                            <li>HTML5</li>
-                            <li>CSS3</li>
-                            <li>JavaScript</li>
-                            <li>React</li>
-                            <li>Tailwind</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div>
-                    <div class="skill-category">
-                        <div class="skill-category-title">Ferramentas e Extras</div>
-                        <ul class="skill-list">
-                            <li>Power BI (Básico)</li>
-                            <li>Linux</li>
-                            <li>Git e GitHub</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="skill-category">
-                        <div class="skill-category-title">Idiomas</div>
-                        <div class="languages">
-                            <div class="language-item"><strong>Inglês:</strong> Avançado (C1)</div>
-                            <div class="language-item"><strong>Espanhol:</strong> Básico (A1)</div>
-                            <div class="language-item"><strong>Japonês:</strong> Básico (N5)</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="section">
-            <div class="section-title">Projetos</div>
-            <div class="projects-item">
-                <div class="project-name">[Projeto Kaizen]</div>
-                <div class="project-tech">Tecnologias: React, Tailwind, JS</div>
-                <div class="project-link">🔗 <a href="https://github.com/Varmundt/Projeto-Kaizen" target="_blank">github.com/Varmundt/Projeto-Kaizen</a></div>
-                <div class="item-description">
-                    Website para promover de forma gratuita e acessível o ensino dos 46 caracteres fundamentais de Katakana e Higarana, assim dando início aos estudos de Japonês entre Jovens e Adolescentes brasileiros.<br>
-                    Desenvolvido como parte da Atividade Extensionista do curso de ADS, mais informações podem ser vistas no repositório do projeto.
-                </div>
+    <main id="cv-content">
+        <section>
+            <div class="profile-header">
+                <h2>Mauricio Miller Oliveira</h2>
+                <p class="profile-age" id="profile-age">20 Anos</p>
+                <p class="profile-role" id="profile-role">Estagiário Back-End C# | Conhecimento em Front-End e Suporte Técnico</p>
             </div>
             
-            <div class="projects-item">
-                <div class="project-name">[PROJETO 2]</div>
-                <div class="project-tech">Tecnologias: Python</div>
-                <div class="project-link">🔗 <a href="" target="_blank">github.com/Varmundt/PROJETO2</a></div>
-                <div class="item-description">Breve descrição do projeto e sua funcionalidade principal.</div>
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                        <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                    <span>Guaíba - RS - CEP 92728-010</span>
+                </div>
+                <div class="contact-item">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                    </svg>
+                    <span>+51 989032545</span>
+                </div>
+                <div class="contact-item">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                    <a href="mailto:mauriciomilleroliveira@hotmail.com">mauriciomilleroliveira@hotmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                        <rect x="2" y="9" width="4" height="12"></rect>
+                        <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                    <a href="https://www.linkedin.com/in/maumiller/" target="_blank">linkedin.com/in/maumiller</a>
+                </div>
+                <div class="contact-item" style="grid-column: 1 / -1;">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                    </svg>
+                    <a href="https://github.com/Varmundt" target="_blank">github.com/Varmundt</a>
+                </div>
             </div>
-        </div>
+        </section>
 
-        <div class="section">
-            <div class="section-title">Experiência Profissional</div>
-            
+        <section>
+            <h3 id="about-title">Sobre</h3>
+            <p class="about-text" id="about-text">Estudante de Análise e Desenvolvimento de Sistemas com perfil full-stack: back-end em C# (POO, MySQL, Regex) e front-end com HTML5/CSS3/JavaScript. Diferenciais: inglês avançado (C1), Power BI para análise de dados e vivência comercial que desenvolveu habilidades de comunicação e resolução de problemas. Projetos disponíveis no GitHub. Busco primeira oportunidade de estágio para evoluir tecnicamente em um ambiente colaborativo.</p>
+        </section>
+
+        <section>
+            <h3 id="skills-title">Habilidades</h3>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h4>Back-end</h4>
+                    <ul class="skill-list">
+                        <li>C#, .NET</li>
+                        <li>Python, Flask</li>
+                        <li id="skill-regex">Estrutura de Regex</li>
+                        <li id="skill-db">Banco de Dados MySQL</li>
+                        <li id="skill-oop">Programação Orientada a Objetos (POO)</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h4>Front-end</h4>
+                    <p class="skill-subtitle" id="frontend-subtitle">Experiência em desenvolvimento WEB utilizando:</p>
+                    <ul class="skill-list">
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h4 id="tools-title">Ferramentas e Extras</h4>
+                    <ul class="skill-list">
+                        <li id="skill-powerbi">Power BI Básico</li>
+                        <li>Linux</li>
+                        <li>GIT e GITHUB</li>
+                        <li id="skill-english">Inglês avançado (C1)</li>
+                        <li id="skill-japanese">Japonês básico (N5)</li>
+                        <li id="skill-spanish">Espanhol básico (A1)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h3 id="experience-title">Experiência</h3>
             <div class="experience-item">
-                <div class="item-title">Operador de Caixa</div>
-                <div class="item-subtitle">Mercado das Bebidas</div>
-                <div class="item-date">Agosto 2023 - Maio 2025</div>
-                <div class="item-description">
-                    Responsável por atendimento ao cliente, controle de estoque, lançamento de notas fiscais no sistema e processamento de pagamentos. Onde desenvolvi habilidades de organização, atenção a detalhes e resolução de problemas em ambiente de alta demanda.
+                <div class="item-header">
+                    <div class="item-title">
+                        <h4>Mercado das Bebidas</h4>
+                        <p class="item-subtitle" id="exp-role">Operador de Caixa</p>
+                    </div>
+                    <span class="item-period" id="exp-period">Agosto 2023 - Maio 2025</span>
                 </div>
+                <p class="item-description" id="exp-desc">Responsável por atendimento ao cliente, controle de estoque, lançamento de notas fiscais no sistema e processamento de pagamentos. Onde desenvolvi habilidades de organização, atenção a detalhes e resolução de problemas em ambiente de alta demanda.</p>
             </div>
-        </div>
+        </section>
 
-        <div class="section">
-            <div class="section-title">Cursos e Certificações</div>
-            
-            <div class="course-item">
-                <div class="item-title">Fundamentos do Power BI (37 Horas)</div>
-                <div class="item-subtitle">Fundação Bradesco</div>
-                <div class="item-date">Julho 2025 - Agosto 2025</div>
-                <div class="item-description">
-                    Formação voltada à análise e modelagem de dados com Power BI, incluindo coleta e transformação via Power Query, criação de medidas em DAX, desenvolvimento de dashboards interativos e aplicação de boas práticas de visualização e desempenho.
+        <section>
+            <h3 id="education-title">Educação</h3>
+            <div class="education-item">
+                <div class="item-header">
+                    <div class="item-title">
+                        <h4 id="edu-degree">Tecnólogo em Análise e Desenvolvimento de Sistemas</h4>
+                        <p class="item-subtitle" id="edu-institution">UNINTER - Centro Universitário Internacional</p>
+                    </div>
+                    <span class="item-period" id="edu-period">Maio 2025 - Junho 2027 (em curso)</span>
                 </div>
+                <p class="item-description" id="edu-details">Conteúdos: HTML5, CSS3, Java, JavaScript, Python, Linux, Programação Orientada a Objetos, Banco de Dados SQL, Design Responsivo, Análise de Requisitos e Versionamento...</p>
             </div>
-        </div>
-    </div>
+        </section>
+
+        <section>
+            <h3 id="cert-title">Cursos e Certificações</h3>
+            <div class="cert-item">
+                <div class="item-header">
+                    <div class="item-title">
+                        <h4 id="cert-name">Fundamentos do Power BI (37 Horas)</h4>
+                        <p class="item-subtitle">Fundação Bradesco</p>
+                    </div>
+                    <span class="item-period" id="cert-period">Julho 2025 - Agosto 2025</span>
+                </div>
+                <p class="item-description" id="cert-desc">Formação voltada à análise e modelagem de dados com Power BI, incluindo coleta e transformação via Power Query, criação de medidas em DAX, desenvolvimento de dashboards interativos e aplicação de boas práticas de visualização e desempenho.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Mauricio Miller Oliveira</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
