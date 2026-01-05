@@ -1,102 +1,96 @@
-        var currentLang = 'pt';
+        let lang = 'pt';
 
-        var translations = {
+        const translations = {
             pt: {
-                pageTitle: 'Currículo',
-                langBtn: 'EN Ver.',
-                downloadBtn: 'Baixar PDF',
-                profileAge: '20 Anos',
-                profileRole: 'Estagiário Back-End C# | Conhecimento em Front-End e Suporte Técnico',
+                langBtn: 'EN',
+                pdfBtn: 'PDF',
+                age: '20 Anos',
+                role: 'Desenvolvedor Back-End C# | .NET | Conhecimento em Front-End e Suporte Técnico',
                 aboutTitle: 'Sobre',
-                aboutText: 'Estudante de Análise e Desenvolvimento de Sistemas com perfil full-stack: back-end em C# (POO, MySQL, Regex) e front-end com HTML5/CSS3/JavaScript. Diferenciais: inglês avançado (C1), Power BI para análise de dados e vivência comercial que desenvolveu habilidades de comunicação e resolução de problemas. Projetos disponíveis no GitHub. Busco primeira oportunidade de estágio para evoluir tecnicamente em um ambiente colaborativo.',
+                aboutText: 'Estudante de Análise e Desenvolvimento de Sistemas com foco full-stack: back-end em C# e front-end em HTML5, CSS3 e JavaScript. Domínio de inglês avançado (C1), conhecimento em Power BI e vivência comercial que reforçou minha comunicação e capacidade de resolver problemas sob pressão. Portfólio ativo no GitHub. Busco meu primeiro estágio para crescer tecnicamente e contribuir em um time colaborativo.',
                 skillsTitle: 'Habilidades',
-                skillRegex: 'Estrutura de Regex',
-                skillDb: 'Banco de Dados MySQL',
-                skillOop: 'Programação Orientada a Objetos (POO)',
-                frontendSubtitle: 'Experiência em desenvolvimento WEB utilizando:',
-                toolsTitle: 'Ferramentas e Extras',
-                skillPowerbi: 'Power BI Básico',
-                skillEnglish: 'Inglês avançado (C1)',
-                skillJapanese: 'Japonês básico (N5)',
-                skillSpanish: 'Espanhol básico (A1)',
-                experienceTitle: 'Experiência',
+                skillDb: 'MySQL',
+                skillOop: 'POO',
+                frontendNote: 'Desenvolvimento WEB:',
+                toolsTitle: 'Ferramentas',
+                skillPowerbi: 'Power BI',
+                skillEnglish: 'Inglês (C1)',
+                skillJapanese: 'Japonês (N5)',
+                skillSpanish: 'Espanhol (A1)',
+                expTitle: 'Experiência',
                 expRole: 'Operador de Caixa',
                 expPeriod: 'Agosto 2023 - Maio 2025',
                 expDesc: 'Responsável por atendimento ao cliente, controle de estoque, lançamento de notas fiscais no sistema e processamento de pagamentos. Onde desenvolvi habilidades de organização, atenção a detalhes e resolução de problemas em ambiente de alta demanda.',
-                educationTitle: 'Educação',
+                eduTitle: 'Educação',
                 eduDegree: 'Tecnólogo em Análise e Desenvolvimento de Sistemas',
                 eduInstitution: 'UNINTER - Centro Universitário Internacional',
-                eduPeriod: 'Maio 2025 - Junho 2027 (em curso)',
-                eduDetails: 'Conteúdos: HTML5, CSS3, Java, JavaScript, Python, Linux, Programação Orientada a Objetos, Banco de Dados SQL, Design Responsivo, Análise de Requisitos e Versionamento...',
-                certTitle: 'Cursos e Certificações',
-                certName: 'Fundamentos do Power BI (37 Horas)',
-                certPeriod: 'Julho 2025 - Agosto 2025',
-                certDesc: 'Formação voltada à análise e modelagem de dados com Power BI, incluindo coleta e transformação via Power Query, criação de medidas em DAX, desenvolvimento de dashboards interativos e aplicação de boas práticas de visualização e desempenho.'
+                eduPeriod: 'Maio 2025 - Jun 2027',
+                eduDesc: 'HTML5, CSS3, Java, JavaScript, Python, Linux, POO, SQL, Design Responsivo, Análise de Requisitos, Versionamento.',
+                certTitle: 'Certificações',
+                certName: 'Fundamentos do Power BI (37h)',
+                certPeriod: 'Jul - Ago 2025',
+                certDesc: 'Análise e modelagem de dados, Power Query, DAX, dashboards interativos e boas práticas de visualização.'
             },
             en: {
-                pageTitle: 'Resume',
-                langBtn: 'PT Ver.',
-                downloadBtn: 'Download PDF',
-                profileAge: '20 Years Old',
-                profileRole: 'Back-End C# Intern | Front-End and Technical Support Knowledge',
+                langBtn: 'PT',
+                pdfBtn: 'PDF',
+                age: '20 Years Old',
+                role: 'Back-End C# Developer | .NET | Front-End and Technical Support Knowledge',
                 aboutTitle: 'About',
-                aboutText: 'Systems Analysis and Development student with a full-stack focus: back-end in C# and front-end in HTML5, CSS3, and JavaScript. Advanced English (C1), experience with Power BI, and commercial background that strengthened communication and problem-solving skills. Active GitHub portfolio. Seeking my first internship to grow technically and contribute within a collaborative team.',
+                aboutText: 'Systems Analysis and Development student with full-stack focus: C# back-end and HTML5, CSS3, JavaScript front-end. Advanced English (C1), Power BI knowledge, and commercial experience that strengthened communication and problem-solving skills under pressure. Active GitHub portfolio. Seeking first internship to grow technically and contribute to a collaborative team.',
                 skillsTitle: 'Skills',
-                skillRegex: 'Regex Structure',
-                skillDb: 'MySQL Database',
-                skillOop: 'Object-Oriented Programming (OOP)',
-                frontendSubtitle: 'Experience in WEB development using:',
-                toolsTitle: 'Tools and Extras',
-                skillPowerbi: 'Basic Power BI',
-                skillEnglish: 'Advanced English (C1)',
-                skillJapanese: 'Basic Japanese (N5)',
-                skillSpanish: 'Basic Spanish (A1)',
-                experienceTitle: 'Experience',
+                skillDb: 'MySQL',
+                skillOop: 'OOP',
+                frontendNote: 'WEB Development:',
+                toolsTitle: 'Tools',
+                skillPowerbi: 'Power BI',
+                skillEnglish: 'English (C1)',
+                skillJapanese: 'Japanese (N5)',
+                skillSpanish: 'Spanish (A1)',
+                expTitle: 'Experience',
                 expRole: 'Cashier Operator',
                 expPeriod: 'August 2023 - May 2025',
-                expDesc: 'Responsible for customer service, inventory control, invoice entry in the system and payment processing. Where I developed organizational skills, attention to detail and problem solving in a high-demand environment.',
-                educationTitle: 'Education',
+                expDesc: 'Responsible for customer service, inventory control, invoice entry and payment processing. Developed organizational skills, attention to detail and problem-solving in high-demand environment.',
+                eduTitle: 'Education',
                 eduDegree: 'Technologist in Systems Analysis and Development',
                 eduInstitution: 'UNINTER - International University Center',
-                eduPeriod: 'May 2025 - June 2027 (ongoing)',
-                eduDetails: 'Contents: HTML5, CSS3, Java, JavaScript, Python, Linux, Object-Oriented Programming, SQL Database, Responsive Design, Requirements Analysis and Versioning...',
-                certTitle: 'Courses and Certifications',
-                certName: 'Power BI Fundamentals (37 Hours)',
-                certPeriod: 'July 2025 - August 2025',
-                certDesc: 'Training focused on data analysis and modeling with Power BI, including collection and transformation via Power Query, creation of measures in DAX, development of interactive dashboards and application of best practices in visualization and performance.'
+                eduPeriod: 'May 2025 - Jun 2027',
+                eduDesc: 'HTML5, CSS3, Java, JavaScript, Python, Linux, OOP, SQL, Responsive Design, Requirements Analysis, Versioning.',
+                certTitle: 'Certifications',
+                certName: 'Power BI Fundamentals (37h)',
+                certPeriod: 'Jul - Aug 2025',
+                certDesc: 'Data analysis and modeling, Power Query, DAX, interactive dashboards and visualization best practices.'
             }
         };
 
-        function toggleLanguage() {
-            currentLang = currentLang === 'pt' ? 'en' : 'pt';
-            var t = translations[currentLang];
+        function toggleLang() {
+            lang = lang === 'pt' ? 'en' : 'pt';
+            const t = translations[lang];
 
-            document.getElementById('page-title').textContent = t.pageTitle;
-            document.getElementById('lang-btn-text').textContent = t.langBtn;
-            document.getElementById('download-btn-text').textContent = t.downloadBtn;
-            document.getElementById('profile-age').textContent = t.profileAge;
-            document.getElementById('profile-role').textContent = t.profileRole;
+            document.getElementById('lang-btn').textContent = t.langBtn;
+            document.getElementById('pdf-btn').textContent = t.pdfBtn;
+            document.getElementById('age').textContent = t.age;
+            document.getElementById('role').textContent = t.role;
             document.getElementById('about-title').textContent = t.aboutTitle;
             document.getElementById('about-text').textContent = t.aboutText;
             document.getElementById('skills-title').textContent = t.skillsTitle;
-            document.getElementById('skill-regex').textContent = t.skillRegex;
             document.getElementById('skill-db').textContent = t.skillDb;
             document.getElementById('skill-oop').textContent = t.skillOop;
-            document.getElementById('frontend-subtitle').textContent = t.frontendSubtitle;
+            document.getElementById('frontend-note').textContent = t.frontendNote;
             document.getElementById('tools-title').textContent = t.toolsTitle;
             document.getElementById('skill-powerbi').textContent = t.skillPowerbi;
             document.getElementById('skill-english').textContent = t.skillEnglish;
             document.getElementById('skill-japanese').textContent = t.skillJapanese;
             document.getElementById('skill-spanish').textContent = t.skillSpanish;
-            document.getElementById('experience-title').textContent = t.experienceTitle;
+            document.getElementById('exp-title').textContent = t.expTitle;
             document.getElementById('exp-role').textContent = t.expRole;
             document.getElementById('exp-period').textContent = t.expPeriod;
             document.getElementById('exp-desc').textContent = t.expDesc;
-            document.getElementById('education-title').textContent = t.educationTitle;
+            document.getElementById('edu-title').textContent = t.eduTitle;
             document.getElementById('edu-degree').textContent = t.eduDegree;
             document.getElementById('edu-institution').textContent = t.eduInstitution;
             document.getElementById('edu-period').textContent = t.eduPeriod;
-            document.getElementById('edu-details').textContent = t.eduDetails;
+            document.getElementById('edu-desc').textContent = t.eduDesc;
             document.getElementById('cert-title').textContent = t.certTitle;
             document.getElementById('cert-name').textContent = t.certName;
             document.getElementById('cert-period').textContent = t.certPeriod;
@@ -104,9 +98,5 @@
         }
 
         function downloadPDF() {
-            var msg = currentLang === 'pt' 
-                ? 'Use Ctrl+P (ou Cmd+P no Mac) e selecione "Salvar como PDF" para baixar seu currículo!' 
-                : 'Use Ctrl+P (or Cmd+P on Mac) and select "Save as PDF" to download your resume!';
-            alert(msg);
             window.print();
         }

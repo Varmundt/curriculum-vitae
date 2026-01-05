@@ -1,170 +1,119 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Currículo - Mauricio Miller Oliveira</title>
 </head>
 <body>
-    <header>
-        <div class="header-content">
-            <h1 id="page-title">Currículo</h1>
-            <div class="header-buttons">
-                <button class="btn-lang" onclick="toggleLanguage()">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <circle cx="12" cy="12" r="10"></circle>
-                        <line x1="2" y1="12" x2="22" y2="12"></line>
-                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
-                    </svg>
-                    <span id="lang-btn-text">EN Ver.</span>
-                </button>
-                <button class="btn-download" onclick="downloadPDF()">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                        <polyline points="7 10 12 15 17 10"></polyline>
-                        <line x1="12" y1="15" x2="12" y2="3"></line>
-                    </svg>
-                    <span id="download-btn-text">Baixar PDF</span>
-                </button>
-            </div>
-        </div>
-    </header>
+    <div class="controls">
+        <button class="btn btn-lang" onclick="toggleLang()">
+            <span id="lang-btn">EN</span>
+        </button>
+        <button class="btn btn-pdf" onclick="downloadPDF()">
+            <span id="pdf-btn">PDF</span>
+        </button>
+    </div>
 
-    <main id="cv-content">
+    <div class="container">
+        <header>
+            <h1>Mauricio Miller Oliveira</h1>
+            <p class="subtitle" id="age">20 Anos</p>
+            <p class="role" id="role">Desenvolvedor Back-End C# | .NET | Conhecimento em Front-End e Suporte Técnico</p>
+            <div class="contact">
+                <div class="contact-item">📍 Guaíba - RS</div>
+                <div class="contact-item">📞 +51 989032545</div>
+                <div class="contact-item">✉️ <a href="mailto:mauriciomilleroliveira@hotmail.com">mauriciomilleroliveira@hotmail.com</a></div>
+                <div class="contact-item">💼 <a href="https://linkedin.com/in/maumiller" target="_blank">linkedin.com/in/maumiller</a></div>
+                <div class="contact-item">💻 <a href="https://github.com/Varmundt" target="_blank">github.com/Varmundt</a></div>
+            </div>
+        </header>
+
         <section>
-            <div class="profile-header">
-                <h2>Mauricio Miller Oliveira</h2>
-                <p class="profile-age" id="profile-age">20 Anos</p>
-                <p class="profile-role" id="profile-role">Estagiário Back-End C# | Conhecimento em Front-End e Suporte Técnico</p>
-            </div>
-            
-            <div class="contact-grid">
-                <div class="contact-item">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                        <circle cx="12" cy="10" r="3"></circle>
-                    </svg>
-                    <span>Guaíba - RS - CEP 92728-010</span>
-                </div>
-                <div class="contact-item">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-                    </svg>
-                    <span>+51 989032545</span>
-                </div>
-                <div class="contact-item">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                        <polyline points="22,6 12,13 2,6"></polyline>
-                    </svg>
-                    <a href="mailto:mauriciomilleroliveira@hotmail.com">mauriciomilleroliveira@hotmail.com</a>
-                </div>
-                <div class="contact-item">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                        <rect x="2" y="9" width="4" height="12"></rect>
-                        <circle cx="4" cy="4" r="2"></circle>
-                    </svg>
-                    <a href="https://www.linkedin.com/in/maumiller/" target="_blank">linkedin.com/in/maumiller</a>
-                </div>
-                <div class="contact-item" style="grid-column: 1 / -1;">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                    </svg>
-                    <a href="https://github.com/Varmundt" target="_blank">github.com/Varmundt</a>
-                </div>
-            </div>
+            <h2 id="about-title">Sobre</h2>
+            <p class="about" id="about-text">Estudante de Análise e Desenvolvimento de Sistemas com foco full-stack: back-end em C# e front-end em HTML5, CSS3 e JavaScript. Domínio de inglês avançado (C1), conhecimento em Power BI e vivência comercial que reforçou minha comunicação e capacidade de resolver problemas sob pressão. Portfólio ativo no GitHub. Busco meu primeiro estágio para crescer tecnicamente e contribuir em um time colaborativo.</p>
         </section>
 
         <section>
-            <h3 id="about-title">Sobre</h3>
-            <p class="about-text" id="about-text">Estudante de Análise e Desenvolvimento de Sistemas com foco full-stack: back-end em C# e front-end em HTML5, CSS3 e JavaScript. Domínio de inglês avançado (C1), experiência com Power BI e vivência comercial que reforçou minha comunicação e capacidade de resolver problemas sob pressão. Portfólio ativo no GitHub. Busco meu primeiro estágio para crescer tecnicamente e contribuir em um time colaborativo.</p>
-        </section>
-
-        <section>
-            <h3 id="skills-title">Habilidades</h3>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h4>Back-end</h4>
-                    <ul class="skill-list">
+            <h2 id="skills-title">Habilidades</h2>
+            <div class="skills-container">
+                <div class="skill-group">
+                    <h3>Back-end</h3>
+                    <ul>
                         <li>C#</li>
                         <li>.NET 9</li>
                         <li>Python</li>
                         <li>Flask</li>
-                        <li id="skill-db">Banco de Dados MySQL</li>
-                        <li id="skill-oop">Programação Orientada a Objetos (POO)</li>
+                        <li id="skill-db">MySQL</li>
+                        <li id="skill-oop">POO</li>
                     </ul>
                 </div>
-                <div class="skill-category">
-                    <h4>Front-end</h4>
-                    <p class="skill-subtitle" id="frontend-subtitle">Experiência em desenvolvimento WEB utilizando:</p>
-                    <ul class="skill-list">
+                <div class="skill-group">
+                    <h3>Front-end</h3>
+                    <p class="skill-note" id="frontend-note">Desenvolvimento WEB:</p>
+                    <ul>
                         <li>HTML5</li>
                         <li>CSS3</li>
                         <li>JavaScript</li>
                     </ul>
                 </div>
-                <div class="skill-category">
-                    <h4 id="tools-title">Ferramentas e Extras</h4>
-                    <ul class="skill-list">
-                        <li id="skill-powerbi">Power BI Básico</li>
+                <div class="skill-group">
+                    <h3 id="tools-title">Ferramentas</h3>
+                    <ul>
+                        <li id="skill-powerbi">Power BI</li>
                         <li>Linux</li>
-                        <li>GIT e GITHUB</li>
-                        <li id="skill-english">Inglês avançado (C1)</li>
-                        <li id="skill-japanese">Japonês básico (N5)</li>
-                        <li id="skill-spanish">Espanhol básico (A1)</li>
+                        <li>Git/GitHub</li>
+                        <li id="skill-english">Inglês (C1)</li>
+                        <li id="skill-japanese">Japonês (N5)</li>
+                        <li id="skill-spanish">Espanhol (A1)</li>
                     </ul>
                 </div>
             </div>
         </section>
 
         <section>
-            <h3 id="experience-title">Experiência</h3>
-            <div class="experience-item">
-                <div class="item-header">
-                    <div class="item-title">
-                        <h4>Mercado das Bebidas</h4>
-                        <p class="item-subtitle" id="exp-role">Operador de Caixa</p>
+            <h2 id="exp-title">Experiência</h2>
+            <div class="entry">
+                <div class="entry-header">
+                    <div>
+                        <div class="entry-title">Mercado das Bebidas</div>
+                        <div class="entry-org" id="exp-role">Operador de Caixa</div>
                     </div>
-                    <span class="item-period" id="exp-period">Agosto 2023 - Maio 2025</span>
+                    <div class="entry-period" id="exp-period">Agosto 2023 - Maio 2025</div>
                 </div>
-                <p class="item-description" id="exp-desc">Responsável por atendimento ao cliente, controle de estoque, lançamento de notas fiscais no sistema e processamento de pagamentos. Onde desenvolvi habilidades de organização, atenção a detalhes e resolução de problemas em ambiente de alta demanda.</p>
+                <p class="entry-desc" id="exp-desc">Responsável por atendimento ao cliente, controle de estoque, lançamento de notas fiscais no sistema e processamento de pagamentos. Onde desenvolvi habilidades de organização, atenção a detalhes e resolução de problemas em ambiente de alta demanda.</p>
             </div>
         </section>
 
         <section>
-            <h3 id="education-title">Educação</h3>
-            <div class="education-item">
-                <div class="item-header">
-                    <div class="item-title">
-                        <h4 id="edu-degree">Tecnólogo em Análise e Desenvolvimento de Sistemas</h4>
-                        <p class="item-subtitle" id="edu-institution">UNINTER - Centro Universitário Internacional</p>
+            <h2 id="edu-title">Educação</h2>
+            <div class="entry">
+                <div class="entry-header">
+                    <div>
+                        <div class="entry-title" id="edu-degree">Tecnólogo em Análise e Desenvolvimento de Sistemas</div>
+                        <div class="entry-org" id="edu-institution">UNINTER - Centro Universitário Internacional</div>
                     </div>
-                    <span class="item-period" id="edu-period">Maio 2025 - Junho 2027 (em curso)</span>
+                    <div class="entry-period" id="edu-period">Maio 2025 - Jun 2027</div>
                 </div>
-                <p class="item-description" id="edu-details">Conteúdos: HTML5, CSS3, Java, JavaScript, Python, Linux, Programação Orientada a Objetos, Banco de Dados SQL, Design Responsivo, Análise de Requisitos e Versionamento...</p>
+                <p class="entry-desc" id="edu-desc">HTML5, CSS3, Java, JavaScript, Python, Linux, POO, SQL, Design Responsivo, Análise de Requisitos, Versionamento.</p>
             </div>
         </section>
 
         <section>
-            <h3 id="cert-title">Cursos e Certificações</h3>
-            <div class="cert-item">
-                <div class="item-header">
-                    <div class="item-title">
-                        <h4 id="cert-name">Fundamentos do Power BI (37 Horas)</h4>
-                        <p class="item-subtitle">Fundação Bradesco</p>
+            <h2 id="cert-title">Certificações</h2>
+            <div class="entry">
+                <div class="entry-header">
+                    <div>
+                        <div class="entry-title" id="cert-name">Fundamentos do Power BI (37h)</div>
+                        <div class="entry-org">Fundação Bradesco</div>
                     </div>
-                    <span class="item-period" id="cert-period">Julho 2025 - Agosto 2025</span>
+                    <div class="entry-period" id="cert-period">Jul - Ago 2025</div>
                 </div>
-                <p class="item-description" id="cert-desc">Formação voltada à análise e modelagem de dados com Power BI, incluindo coleta e transformação via Power Query, criação de medidas em DAX, desenvolvimento de dashboards interativos e aplicação de boas práticas de visualização e desempenho.</p>
+                <p class="entry-desc" id="cert-desc">Análise e modelagem de dados, Power Query, DAX, dashboards interativos e boas práticas de visualização.</p>
             </div>
         </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 Mauricio Miller Oliveira</p>
-    </footer>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
