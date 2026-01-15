@@ -5,23 +5,14 @@
                 langBtn: 'EN',
                 pdfBtn: 'PDF',
                 age: '20 Anos',
-                role: 'Desenvolvedor Back-End | C# • .NET • ASP.NET',
+                role: 'Back-End Developer | C# | .NET | ASP.NET Web API | SQL',
                 aboutTitle: 'Sobre',
-                aboutText: 'Estudante de Análise e Desenvolvimento de Sistemas com foco em back-end utilizando C# e .NET. Experiência complementar em front-end (HTML5, CSS3, JavaScript) e análise de dados com Power BI. Busco oportunidade de estágio para aplicar conhecimentos técnicos, contribuir em projetos desafiadores e crescer profissionalmente em um ambiente colaborativo.',
+                aboutText: 'Estudante de Análise e Desenvolvimento de Sistemas com foco em desenvolvimento back-end utilizando C# e .NET. Experiência prática com ASP.NET Web API e desenvolvimento de APIs REST. Conhecimentos complementares em front-end (HTML5, CSS3, JavaScript), banco de dados SQL e análise de dados com Power BI. Busco oportunidade de estágio para aplicar conhecimentos técnicos, contribuir em projetos desafiadores e crescer profissionalmente em um ambiente colaborativo.',
                 skillsTitle: 'Habilidades Técnicas',
-                skillCsharpLevel: '(Intermediário)',
-                skillDotnetLevel: '(Básico)',
-                skillOop: 'POO',
-                skillOopLevel: '(Intermediário)',
                 skillDb: 'MySQL / SQL',
-                skillDbLevel: '(Básico)',
-                skillPythonLevel: '(Básico)',
-                skillHtmlLevel: '(Intermediário)',
-                skillCssLevel: '(Intermediário)',
-                skillJsLevel: '(Básico)',
                 toolsTitle: 'Ferramentas',
                 skillPowerbi: 'Power BI',
-                skillVscode: 'VS Code / Visual Studio',
+                skillVscode: 'VS Code / JetBrains Rider',
                 expTitle: 'Experiência',
                 expRole: 'Operador de Caixa',
                 expPeriod: 'Agosto 2023 - Maio 2025',
@@ -50,23 +41,14 @@
                 langBtn: 'PT',
                 pdfBtn: 'PDF',
                 age: '20 Years Old',
-                role: 'Back-End Developer | C# • .NET • ASP.NET',
+                role: 'Back-End Developer | C# | .NET | ASP.NET Web API | SQL',
                 aboutTitle: 'About',
-                aboutText: 'Systems Analysis and Development student focused on back-end development using C# and .NET. Complementary experience in front-end (HTML5, CSS3, JavaScript) and data analysis with Power BI. Seeking internship opportunity to apply technical knowledge, contribute to challenging projects, and grow professionally in a collaborative environment.',
+                aboutText: 'Systems Analysis and Development student focused on back-end development using C# and .NET. Practical experience with ASP.NET Web API and REST API development. Complementary knowledge in front-end (HTML5, CSS3, JavaScript), SQL databases, and data analysis with Power BI. Seeking internship opportunity to apply technical knowledge, contribute to challenging projects, and grow professionally in a collaborative environment.',
                 skillsTitle: 'Technical Skills',
-                skillCsharpLevel: '(Intermediate)',
-                skillDotnetLevel: '(Basic)',
-                skillOop: 'OOP',
-                skillOopLevel: '(Intermediate)',
                 skillDb: 'MySQL / SQL',
-                skillDbLevel: '(Basic)',
-                skillPythonLevel: '(Basic)',
-                skillHtmlLevel: '(Intermediate)',
-                skillCssLevel: '(Intermediate)',
-                skillJsLevel: '(Basic)',
                 toolsTitle: 'Tools',
                 skillPowerbi: 'Power BI',
-                skillVscode: 'VS Code / Visual Studio',
+                skillVscode: 'VS Code / JetBrains Rider',
                 expTitle: 'Experience',
                 expRole: 'Cashier Operator',
                 expPeriod: 'August 2023 - May 2025',
@@ -97,49 +79,47 @@
             lang = lang === 'pt' ? 'en' : 'pt';
             const t = translations[lang];
 
-            document.getElementById('lang-btn').textContent = t.langBtn;
-            document.getElementById('pdf-btn').textContent = t.pdfBtn;
-            document.getElementById('age').textContent = t.age;
-            document.getElementById('role').textContent = t.role;
-            document.getElementById('about-title').textContent = t.aboutTitle;
-            document.getElementById('about-text').textContent = t.aboutText;
-            document.getElementById('skills-title').textContent = t.skillsTitle;
-            document.getElementById('skill-csharp-level').textContent = t.skillCsharpLevel;
-            document.getElementById('skill-dotnet-level').textContent = t.skillDotnetLevel;
-            document.getElementById('skill-oop').textContent = t.skillOop;
-            document.getElementById('skill-oop-level').textContent = t.skillOopLevel;
-            document.getElementById('skill-db').textContent = t.skillDb;
-            document.getElementById('skill-db-level').textContent = t.skillDbLevel;
-            document.getElementById('skill-python-level').textContent = t.skillPythonLevel;
-            document.getElementById('skill-html-level').textContent = t.skillHtmlLevel;
-            document.getElementById('skill-css-level').textContent = t.skillCssLevel;
-            document.getElementById('skill-js-level').textContent = t.skillJsLevel;
-            document.getElementById('tools-title').textContent = t.toolsTitle;
-            document.getElementById('skill-powerbi').textContent = t.skillPowerbi;
-            document.getElementById('skill-vscode').textContent = t.skillVscode;
-            document.getElementById('exp-title').textContent = t.expTitle;
-            document.getElementById('exp-role').textContent = t.expRole;
-            document.getElementById('exp-period').textContent = t.expPeriod;
-            document.getElementById('exp-desc').textContent = t.expDesc;
-            document.getElementById('edu-title').textContent = t.eduTitle;
-            document.getElementById('edu-degree').textContent = t.eduDegree;
-            document.getElementById('edu-institution').textContent = t.eduInstitution;
-            document.getElementById('edu-period').textContent = t.eduPeriod;
-            document.getElementById('edu-desc').textContent = t.eduDesc;
-            document.getElementById('cert-title').textContent = t.certTitle;
-            document.getElementById('cert-name').textContent = t.certName;
-            document.getElementById('cert-org').textContent = t.certOrg;
-            document.getElementById('cert-period').textContent = t.certPeriod;
-            document.getElementById('cert-desc').textContent = t.certDesc;
-            document.getElementById('lang-title').textContent = t.langTitle;
-            document.getElementById('lang-portuguese').textContent = t.langPortuguese;
-            document.getElementById('lang-portuguese-level').textContent = t.langPortugueseLevel;
-            document.getElementById('lang-english').textContent = t.langEnglish;
-            document.getElementById('lang-english-level').textContent = t.langEnglishLevel;
-            document.getElementById('lang-japanese').textContent = t.langJapanese;
-            document.getElementById('lang-japanese-level').textContent = t.langJapaneseLevel;
-            document.getElementById('lang-spanish').textContent = t.langSpanish;
-            document.getElementById('lang-spanish-level').textContent = t.langSpanishLevel;
+            // Helper function to safely update elements
+            const update = (id, value) => {
+                const el = document.getElementById(id);
+                if (el) el.textContent = value;
+            };
+
+            // Update all elements
+            update('lang-btn', t.langBtn);
+            update('pdf-btn', t.pdfBtn);
+            update('age', t.age);
+            update('role', t.role);
+            update('about-title', t.aboutTitle);
+            update('about-text', t.aboutText);
+            update('skills-title', t.skillsTitle);
+            update('skill-db', t.skillDb);
+            update('tools-title', t.toolsTitle);
+            update('skill-powerbi', t.skillPowerbi);
+            update('skill-vscode', t.skillVscode);
+            update('exp-title', t.expTitle);
+            update('exp-role', t.expRole);
+            update('exp-period', t.expPeriod);
+            update('exp-desc', t.expDesc);
+            update('edu-title', t.eduTitle);
+            update('edu-degree', t.eduDegree);
+            update('edu-institution', t.eduInstitution);
+            update('edu-period', t.eduPeriod);
+            update('edu-desc', t.eduDesc);
+            update('cert-title', t.certTitle);
+            update('cert-name', t.certName);
+            update('cert-org', t.certOrg);
+            update('cert-period', t.certPeriod);
+            update('cert-desc', t.certDesc);
+            update('lang-title', t.langTitle);
+            update('lang-portuguese', t.langPortuguese);
+            update('lang-portuguese-level', t.langPortugueseLevel);
+            update('lang-english', t.langEnglish);
+            update('lang-english-level', t.langEnglishLevel);
+            update('lang-japanese', t.langJapanese);
+            update('lang-japanese-level', t.langJapaneseLevel);
+            update('lang-spanish', t.langSpanish);
+            update('lang-spanish-level', t.langSpanishLevel);
         }
 
         function downloadPDF() {
